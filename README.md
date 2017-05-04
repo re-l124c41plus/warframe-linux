@@ -43,7 +43,7 @@
 
 ## Always launch the game using Warframe-Launcher.bat. It runs the black-box updater before each launch to ensure your game is up to date.  
 
-Technical notes:  
+## Technical notes:  
 
 These settings are disabled by default to reduce gameplay stuttering:  
 -Anti-aliasing  
@@ -62,11 +62,11 @@ These settings are disabled in the launcher for safe updating and to improve per
 
 You can set all other graphics settings as you wish.  
 
-## Known Issues  
-Known Issues:  
+## Known Issues:  
 -Changing Screen Size and Switching between Borderless/Fullscreen/Windowed crashes the game  
 -Fullscreen mode does not work  
 
+## Tips:  
 To run the game in borderless fullscreen:  
 1. Open ~/.Warframe/drive_c/users/YOUR-USER-NAME/Local Settings/Application Data/Warframe/EE.cfg  
 2. Add this in the [Windows_Config,/EE/Types/Base/Config] section:  
