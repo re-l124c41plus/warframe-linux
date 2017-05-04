@@ -5,13 +5,17 @@
 
 2. Create a 32 bit wine prefix for Warframe:  
 
+    ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe winecfg  
+    ```
 
 --Enable CSMT in the staging tab of winecfg  
 
 3. Install Warframe wine dependencies:  
 
+    ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe winetricks winxp vcrun2015 directx9 hosts wininet winhttp devenum quartz  
+    ```
 
 4. Extract all files in this git repository to ~/.Warframe/drive_c/Warframe/  
 
@@ -19,17 +23,23 @@
 
 6. Import wf-launcher.reg, wf-wine-direct3d.reg, wf-wine-dlloverrides.reg into registry via regedit:  
 
+    ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-launcher.reg  
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-wine-direct3d.reg  
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-wine-dlloverrides.reg  
+    ```
 
 7. Install the game with Warframe-Linux-Installer.bat. The black box that comes up is the command line auto-updater. Progress is shown in the window title.  
 
+    ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Linux-Installer.bat  
+    ```
 
 8. LAUNCH THE GAME using Warframe-Launcher.bat:  
 
+    ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Launcher.bat  
+    ```
 
 ## Always launch the game using Warframe-Launcher.bat. It runs the black-box updater before each launch to ensure your game is up to date.  
 
