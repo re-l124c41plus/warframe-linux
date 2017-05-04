@@ -1,5 +1,9 @@
 ## Installation Instructions
 
+*Please be aware that these steps can be easily avoided by installing [Lutris 0.4.9](https://lutris.net/downloads/) or higher and using it to install my [Warframe Install Script](https://lutris.net/games/warframe/). Lutris also installs my patched version of Wine-Staging 2.7  
+
+In the event you must use wine directly, below are the following steps to run warframe with wine. Please also note wine must be patched with my [Warframe patch](https://raw.githubusercontent.com/GloriousEggroll/wine-warframe-patches/master/0001-revert-changes-that-cause-warframe-mission-loading-e.patch).  
+
 1. Install wine-staging 2.7 (or higher) patched with my patch found here:  
 [Warframe Mission loading/exit crash fix](https://raw.githubusercontent.com/GloriousEggroll/wine-warframe-patches/master/0001-revert-changes-that-cause-warframe-mission-loading-e.patch)  
 
