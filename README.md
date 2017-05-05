@@ -21,11 +21,19 @@ In the event you must use wine directly, below are the following steps to run wa
     WINEARCH=win32 WINEPREFIX=~/.Warframe winetricks winxp vcrun2015 directx9 hosts wininet winhttp devenum quartz  
     ```
 
-4. Extract all files in this git repository to ~/.Warframe/drive_c/Warframe/  
+4. Extract all files in this git repository to ~/.Warframe/drive_c/Program\ Files/Warframe/  
 
-5. Move EE.cfg to ~/.Warframe/drive_c/users/YOUR-USER-NAME/Local\ Settings/Application\ Data/Warframe  
+5. cd into ~/.Warframe/drive_c/Program\ Files/Warframe/
 
-6. Import wf-launcher.reg, wf-wine-direct3d.reg, wf-wine-dlloverrides.reg into registry via regedit:  
+6. Download the official game launcher (it is a necessary file): 
+
+    ```
+    wget http://content.warframe.com/dl/Warframe.msi
+    ```
+
+7. Move EE.cfg to ~/.Warframe/drive_c/users/YOUR-USER-NAME/Local\ Settings/Application\ Data/Warframe  
+
+8. Import wf-launcher.reg, wf-wine-direct3d.reg, wf-wine-dlloverrides.reg into registry via regedit:  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-launcher.reg  
@@ -33,19 +41,26 @@ In the event you must use wine directly, below are the following steps to run wa
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-wine-dlloverrides.reg  
     ```
 
-7. Install the game with Warframe-Linux-Installer.bat. The black box that comes up is the command line auto-updater. Progress is shown in the window title.  
+9. Install the game with Warframe-Linux-Installer.bat. The black box that comes up is the command line auto-updater. Progress is shown in the window title.  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Linux-Installer.bat  
     ```
 
-8. LAUNCH THE GAME using Warframe-Launcher.bat:  
+10. LAUNCH THE GAME using Warframe-Launcher.bat:  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Launcher.bat  
     ```
 
-## Always launch the game using Warframe-Launcher.bat. It runs the black-box updater before each launch to ensure your game is up to date.  
+# Always launch the game using Warframe-Launcher.bat. 
+
+## But why?
+
+a) It runs the black-box updater before each launch to ensure your game is up to date before running the official updater.   
+b) This ensures that the updater only updates Warframe.exe and does not hang during a large update.   
+c) It ensures that Warframe-updater.exe is always updated after Warframe.exe is updated  
+d) It ensures that Launcher.exe is moved to Launcher-copy.exe, and that Launcher-copy.exe is run by default so that the Launcher.exe does not go into a boot loop.  
 
 ## Technical notes:  
 
