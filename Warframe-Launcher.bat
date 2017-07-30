@@ -22,9 +22,8 @@ del "%launcherDir%\Launcher.exe"
 )
 
 wget.exe /transfer "Warframe" "http://content.warframe.com/dl/Warframe.msi" "Warframe.msi"
-ping -n 5 0.0.0.0 > nul
+ping -n 10 0.0.0.0 > nul
 
-msiexec /i Warframe.msi
-ping -n 5 0.0.0.0 > nul
+cmd /C msiexec /i Warframe.msi
 
 exit 0
