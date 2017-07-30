@@ -25,7 +25,7 @@ REGEDIT4
 "ReadEula"="ECFEC2AEE8054A9E7665DBD03D1DE6A1"
 "ServerCluster"=dword:00000000
 "VerifyVersionPublic"=dword:00000002
-"DownloadDir"="C:\\Program Files\\Warframe\\Downloaded"
+"DownloadDir"="C:\\Program Files (x86)\\Warframe\\Downloaded"
 "LauncherExe"="C:\\users\\%USERNAME%\\Local Settings\\Application Data\\Warframe\\Downloaded\\Public\\Tools\\Launcher.exe"
 
 [HKEY_CURRENT_USER\Software\Wine\AppDefaults\Overwatch.exe\DllRedirects]
