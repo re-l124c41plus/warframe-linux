@@ -41,13 +41,8 @@ In the event you must use wine directly, below are the following steps to run wa
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-wine-dlloverrides.reg  
     ```
 
-9. Install the game with Warframe-Linux-Installer.bat. The black box that comes up is the command line auto-updater. Progress is shown in the window title.  
 
-    ```
-    WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Linux-Installer.bat  
-    ```
-
-10. LAUNCH THE GAME using Warframe-Launcher.bat:  
+9. LAUNCH THE GAME using Warframe-Launcher.bat:  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Launcher.bat  
@@ -57,12 +52,10 @@ In the event you must use wine directly, below are the following steps to run wa
 
 ## But why?
 
-a) It runs the black-box updater before each launch to ensure your game is up to date before running the official updater.   
-b) This ensures that the updater only updates Warframe.exe and does not hang during a large update.   
-c) It ensures that Warframe-updater.exe is always updated after Warframe.exe is updated  
-d) It ensures that Launcher.exe is moved to Launcher-copy.exe, and that Launcher-copy.exe is run by default so that the Launcher.exe does not go into a boot loop.  
+a) It ensures that Launcher.exe is removed and always downloads a fresh copy of Warframe.msi from the warframe website.
 
 ## Technical notes:  
+Upon first install the installer WILL take a long time at "checking for new content", just let it do it's thing.
 
 These settings are disabled by default to reduce gameplay stuttering:  
 -Anti-aliasing  
