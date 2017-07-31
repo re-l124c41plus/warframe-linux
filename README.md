@@ -25,15 +25,20 @@ In the event you must use wine directly, below are the following steps to run wa
 
 5. cd into ~/.Warframe/drive_c/Program\ Files/Warframe/
 
-6. Download the official game launcher (it is a necessary file): 
+6. chmod wget.exe. This is simply a shell script for wget that i renamed into a .exe, you can see its contents in any text editor.
+   ```
+   chmod a+x wget.exe
+   ```
+
+7. Download the official game launcher (it is a necessary file): 
 
     ```
     wget http://content.warframe.com/dl/Warframe.msi
     ```
 
-7. Move EE.cfg to ~/.Warframe/drive_c/users/YOUR-USER-NAME/Local\ Settings/Application\ Data/Warframe  
+8. Move EE.cfg to ~/.Warframe/drive_c/users/YOUR-USER-NAME/Local\ Settings/Application\ Data/Warframe  
 
-8. Import wf-launcher.reg, wf-wine-direct3d.reg, wf-wine-dlloverrides.reg into registry via regedit:  
+9. Import wf-launcher.reg, wf-wine-direct3d.reg, wf-wine-dlloverrides.reg into registry via regedit:  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine regedit /S wf-launcher.reg  
@@ -42,7 +47,7 @@ In the event you must use wine directly, below are the following steps to run wa
     ```
 
 
-9. LAUNCH THE GAME using Warframe-Launcher.bat:  
+10. LAUNCH THE GAME using Warframe-Launcher.bat:  
 
     ```
     WINEARCH=win32 WINEPREFIX=~/.Warframe wine cmd /C Warframe-Launcher.bat  
