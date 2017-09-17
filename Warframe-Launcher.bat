@@ -21,9 +21,18 @@ if exist "%launcherDir%\Launcher.exe" (
 del "%launcherDir%\Launcher.exe"
 )
 
-wget.exe /transfer "Warframe" "http://content.warframe.com/dl/Warframe.msi" "Warframe.msi"
+start /wait wget.exe /transfer "Warframe" "http://content.warframe.com/dl/Warframe.msi" "Warframe.msi"
+
+:CheckForFile
+IF EXIST "Warframe.msi" GOTO FoundIt
+
+REM If we get here, the file is not found.
+
+REM Wait 60 seconds and then recheck.
+REM If no delay is needed, comment/remove the timeout line.
 ping -n 10 0.0.0.0 > nul
 
-cmd /C msiexec /i Warframe.msi
+GOTO CheckForFile
 
-exit 0
+:FoundIt
+msiexec /i Warframe.msi
