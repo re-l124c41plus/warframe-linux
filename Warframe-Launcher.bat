@@ -9,14 +9,6 @@ if exist "%currDir%\Warframe.msi" (
 del "%currDir%\Warframe.msi"
 )
 
-if exist "%gameDir%\Warframe.exe" (
-del "%gameDir%\Warframe.exe"
-)
-
-if exist "%gameDir%\Warframe.x64.exe" (
-del "%gameDir%\Warframe.x64.exe"
-)
-
 if exist "%launcherDir%\Launcher.exe" (
 del "%launcherDir%\Launcher.exe"
 )
@@ -35,4 +27,8 @@ ping -n 10 0.0.0.0 > nul
 GOTO CheckForFile
 
 :FoundIt
+start /wait "%gameDir%\Drivers\DirectX9\DXSETUP.exe" /silent
+start /wait "%gameDir%\Warframe.exe" -log:/Preprocess.log -threadedworker:1 -cluster:public -language:en -applet:/EE/Types/Framework/ContentUpdate
 msiexec /i Warframe.msi
+
+
