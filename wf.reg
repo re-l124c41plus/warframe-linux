@@ -35,7 +35,6 @@ REGEDIT4
 "OffscreenRenderingMode"="fbo"
 "RenderTargetLockMode"="readtex"
 "StrictDrawOrdering"="disabled"
-"UseGLSL"="disabled"
 "VideoMemorySize"="2048"
 
 [HKEY_CURRENT_USER\Software\Wine\DllOverrides]
