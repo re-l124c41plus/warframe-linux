@@ -27,7 +27,6 @@ ping -n 10 0.0.0.0 > nul
 GOTO CheckForFile
 
 :FoundIt
-start /b /wait "" "%gameDir%\Drivers\DirectX9\DXSETUP.exe" /silent
 start /b /wait "" "%gameDir%\Warframe.exe" -log:/Preprocess.log -threadedworker:1 -cluster:public -language:en -applet:/EE/Types/Framework/ContentUpdate
 msiexec /i Warframe.msi
 
