@@ -10,8 +10,8 @@ REGEDIT4
 "Enable64Bit"=dword:00000000
 "EnableAggressiveDownload"=dword:00000001
 "EnableBulkDownload"=dword:00000001
-"EnableDirectX10"=dword:00000000
-"EnableDirectX11"=dword:00000000
+"EnableDirectX10"=dword:00000001
+"EnableDirectX11"=dword:00000001
 "EnableFullScreen"=dword:00000000
 "EnableMTRendering"=dword:00000001
 "Jun2010_XAudio_x64.cab"="EDEB828A8E54A9F3851007D80BC8DD6E"
@@ -25,7 +25,7 @@ REGEDIT4
 "ReadEula"="ECFEC2AEE8054A9E7665DBD03D1DE6A1"
 "ServerCluster"=dword:00000000
 "VerifyVersionPublic"=dword:00000002
-"DownloadDir"="C:\\Program Files\\Warframe\\Downloaded"
+"DownloadDir"="C:\\Program Files (x86)\\Warframe\\Downloaded"
 "LauncherExe"="C:\\users\\%USERNAME%\\Local Settings\\Application Data\\Warframe\\Downloaded\\Public\\Tools\\Launcher.exe"
 
 [HKEY_CURRENT_USER\Software\Wine\DllRedirects]
