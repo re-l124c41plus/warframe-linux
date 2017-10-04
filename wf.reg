@@ -28,9 +28,6 @@ REGEDIT4
 "DownloadDir"="C:\\Program Files\\Warframe\\Downloaded"
 "LauncherExe"="C:\\users\\%USERNAME%\\Local Settings\\Application Data\\Warframe\\Downloaded\\Public\\Tools\\Launcher.exe"
 
-[HKEY_CURRENT_USER\Software\Wine\DllRedirects]
-"wined3d"="wined3d-csmt.dll"
-
 [HKEY_CURRENT_USER\Software\Wine\Direct3D]
 "OffscreenRenderingMode"="fbo"
 "RenderTargetLockMode"="readtex"
