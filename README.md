@@ -14,7 +14,7 @@
 3. Install Warframe wine dependencies:  
 
     ```
-    WINEPREFIX=~/.Warframe winetricks vcrun2015 win7 
+    WINEPREFIX=~/.Warframe winetricks vcrun2015 devenum quartz xact xinput win7 
     ```
 
 4. Extract all files in this git repository to ~/.Warframe/drive_c/Program\ Files/Warframe/  
