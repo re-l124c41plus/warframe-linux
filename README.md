@@ -17,28 +17,30 @@ Option B: Without Lutris:
     ./install.sh  
     ```  
 4. Launch the game via any of the following methods:  
+    ```  
 -Applications>Games>Warframe  
 -Warframe desktop shortcut  
 -type "warframe" in a terminal  
-
+    ```  
 5. There will be a black box that comes up - this will update your warframe game. Let it run. When it finishes, the Launcher will run. Press play!  
 
 ## Technical notes:  
 Known issues:
-Tessellation and Local Reflections cause graphical glitches. Motion blurring causes stuttering and does not work correctly. Leave them off.
+Local Reflections cause graphical glitches. Motion blurring is broken, Depth of Field causes stuttering and does not work correctly. Leave them off.  
 
-These settings are disabled in the launcher to prevent crashing and for better performance:
-  ```
--64-bit mode
--Launcher GPU Acceleration
-  ```
-These settings are disabled by default to reduce gameplay stuttering and/or graphical glitches:
-  ```
--Vsync: OFF
--Tessellation: OFF
--Local Reflections: OFF
--Local Reflection Blur: OFF
--Motion Blurring: OFF
--Depth of Field: OFF
-  ```
-You can set all other graphics settings as you wish.
+These settings are disabled in the launcher to prevent crashing and for better performance:  
+    ```  
+-64-bit mode  
+-Launcher GPU Acceleration  
+-Multithreading (this is handled by csmt instead. Game's MT causes artifacting)  
+    ```  
+These settings are disabled by default to reduce gameplay stuttering and/or graphical glitches:  
+    ```  
+-Vsync: OFF  
+-Local Reflections: OFF  
+-Local Reflection Blur: OFF  
+-Motion Blurring: OFF  
+-Depth of Field: OFF  
+    ```  
+
+You can set all other graphics settings as you wish.  
