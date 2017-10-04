@@ -13,7 +13,7 @@ REGEDIT4
 "EnableDirectX10"=dword:00000001
 "EnableDirectX11"=dword:00000001
 "EnableFullScreen"=dword:00000000
-"EnableMTRendering"=dword:00000001
+"EnableMTRendering"=dword:00000000
 "Jun2010_XAudio_x64.cab"="EDEB828A8E54A9F3851007D80BC8DD6E"
 "Jun2010_XAudio_x86.cab"="9D2DA3B1055120AF7C2995896F5D51ED"
 "Language"="en"
@@ -27,6 +27,9 @@ REGEDIT4
 "VerifyVersionPublic"=dword:00000002
 "DownloadDir"="C:\\Program Files\\Warframe\\Downloaded"
 "LauncherExe"="C:\\users\\%USERNAME%\\Local Settings\\Application Data\\Warframe\\Downloaded\\Public\\Tools\\Launcher.exe"
+
+[HKEY_CURRENT_USER\Software\Wine\DllRedirects]
+ "wined3d"="wined3d-csmt.dll"
 
 [HKEY_CURRENT_USER\Software\Wine\Direct3D]
 "OffscreenRenderingMode"="fbo"
