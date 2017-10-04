@@ -18,9 +18,9 @@ Option B: Without Lutris:
     ```  
 4. Launch the game via any of the following methods:  
     ```  
--Applications>Games>Warframe  
--Warframe desktop shortcut  
--type "warframe" in a terminal  
+    Applications>Games>Warframe  
+    Warframe desktop shortcut  
+    type "warframe" in a terminal  
     ```  
 5. There will be a black box that comes up - this will update your warframe game. Let it run. When it finishes, the Launcher will run. Press play!  
 
@@ -30,17 +30,17 @@ Local Reflections cause graphical glitches. Motion blurring is broken, Depth of 
 
 These settings are disabled in the launcher to prevent crashing and for better performance:  
     ```  
--64-bit mode  
--Launcher GPU Acceleration  
--Multithreading (this is handled by csmt instead. Game's MT causes artifacting)  
+    64-bit mode  
+    Launcher GPU Acceleration  
+    Multithreading (this is handled by csmt instead. Game's MT causes artifacting)  
     ```  
 These settings are disabled by default to reduce gameplay stuttering and/or graphical glitches:  
     ```  
--Vsync: OFF  
--Local Reflections: OFF  
--Local Reflection Blur: OFF  
--Motion Blurring: OFF  
--Depth of Field: OFF  
+    Vsync: OFF  
+    Local Reflections: OFF  
+    Local Reflection Blur: OFF  
+    Motion Blurring: OFF  
+    Depth of Field: OFF  
     ```  
 
 You can set all other graphics settings as you wish.  
