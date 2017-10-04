@@ -38,11 +38,11 @@ echo "WINEPREFIX=/home/$USER/Warframe WINEDEBUG=-all wine cmd /C Warframe-Launch
 chmod a+x warframe.sh
 
 echo "*************************************************"
-echo "The next few steps will prompt you for shortcut creations. If root is required, please enter your root password when asked."
+echo "The next few steps will prompt you for shortcut creations. If root is required, please enter your root password when prompted."
 echo "*************************************************"
 
 echo "*************************************************"
-echo "Creating warframe global terminal script."
+echo "Creating warframe shell script."
 echo "*************************************************"
 sudo cp /home/$USER/Warframe/drive_c/Program\ Files/Warframe/warframe.sh /usr/bin/warframe
 
@@ -78,7 +78,7 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	echo "*************************************************"
-	echo "Creating warframe desktop shortcut. Please enter root password to allow /usr/share/applications entry to be created."
+	echo "Creating warframe desktop shortcut."
 	echo "*************************************************"
 	cp /usr/share/applications/warframe.desktop /home/$USER/Desktop/
 fi
