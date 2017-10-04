@@ -51,15 +51,17 @@ Known issues:
 Tessellation and Local Reflections cause graphical glitches. Motion blurring causes stuttering and does not work correctly. Leave them off.
 
 These settings are disabled in the launcher to prevent crashing and for better performance:
+  ```
 -64-bit mode
 -Launcher GPU Acceleration
-
+  ```
 These settings are disabled by default to reduce gameplay stuttering and/or graphical glitches:
+  ```
 -Vsync: OFF
 -Tessellation: OFF
 -Local Reflections: OFF
 -Local Reflection Blur: OFF
 -Motion Blurring: OFF
 -Depth of Field: OFF
-
+  ```
 You can set all other graphics settings as you wish.
