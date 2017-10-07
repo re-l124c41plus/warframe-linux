@@ -32,6 +32,8 @@ echo "*************************************************"
 echo "#!/bin/bash" > warframe.sh
 
 echo "export PULSE_LATENCY_MSEC=60" >> warframe.sh
+echo "export __GL_THREADED_OPTIMIZATIONS=1" >> warframe.sh
+echo "export mesa_glthread=true" >> warframe.sh
 echo "cd /home/$USER/Warframe/drive_c/Program\ Files/Warframe/" >> warframe.sh
 echo "WINEPREFIX=/home/$USER/Warframe WINEDEBUG=-all wine cmd /C Warframe-Launcher.bat" >> warframe.sh
 
