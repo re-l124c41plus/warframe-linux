@@ -25,6 +25,14 @@ Option B: Without Lutris:
     ```  
 5. There will be a black box that comes up - this will update your warframe game. Let it run. When it finishes, the Launcher will run. Press play!  
 
+## Uninstallation/Removal Instructions
+This applies to non-lutris only: 
+
+    ```  
+    chmod a+x uninstall.sh  
+    ./uninstall.sh  
+    ```  
+
 ## Technical notes:  
 Known issues:
 Local Reflections cause graphical glitches. Motion blurring is broken, Depth of Field causes stuttering and does not work correctly. Leave them off.  
