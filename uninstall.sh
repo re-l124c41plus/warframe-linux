@@ -27,7 +27,7 @@ sudo rm -R /home/$USER/Desktop/warframe.desktop
 echo "*************************************************"
 echo "Removing home/$USER/Warframe"
 echo "*************************************************"
-sudo rm -R home/$USER/Warframe
+sudo rm -R /home/$USER/Warframe
 
 echo "*************************************************"
 echo "Warframe has been successfully removed."
