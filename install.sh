@@ -25,6 +25,11 @@ echo "Applying warframe wine prefix registry settings."
 echo "*************************************************"
 WINEDEBUG=-all WINEPREFIX=/home/$USER/Warframe wine regedit /S wf.reg
 
+
+echo "*************************************************"
+echo "The next few steps will prompt you for shortcut creations. If root is required, please enter your root password when prompted."
+echo "*************************************************"
+
 echo "*************************************************"
 echo "Creating warframe shell script"
 echo "*************************************************"
@@ -38,18 +43,10 @@ echo "cd /home/$USER/Warframe/drive_c/Program\ Files/Warframe/" >> warframe.sh
 echo "WINEPREFIX=/home/$USER/Warframe WINEDEBUG=-all wine cmd /C Warframe-Launcher.bat" >> warframe.sh
 
 chmod a+x warframe.sh
-
-echo "*************************************************"
-echo "The next few steps will prompt you for shortcut creations. If root is required, please enter your root password when prompted."
-echo "*************************************************"
-
-echo "*************************************************"
-echo "Creating warframe shell script."
-echo "*************************************************"
 sudo cp /home/$USER/Warframe/drive_c/Program\ Files/Warframe/warframe.sh /usr/bin/warframe
 
 
-read -p "Would you like a menu shortcut? " -n 1 -r
+read -p "Would you like a menu shortcut? y/n" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -75,7 +72,7 @@ then
 	sudo cp warframe.desktop /usr/share/applications/
 fi
 
-read -p "Would you like a desktop shortcut? " -n 1 -r
+read -p "Would you like a desktop shortcut? y/n" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
