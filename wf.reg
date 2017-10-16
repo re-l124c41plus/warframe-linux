@@ -9,7 +9,7 @@ REGEDIT4
 "dxupdate.cab"="8ADF5A3C4BD187052BFA92B34220F4E7"
 "Enable64Bit"=dword:00000000
 "EnableAggressiveDownload"=dword:00000001
-"EnableBulkDownload"=dword:00000001
+"EnableBulkDownload"=dword:00000000
 "EnableDirectX10"=dword:00000001
 "EnableDirectX11"=dword:00000001
 "EnableFullScreen"=dword:00000000
