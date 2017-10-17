@@ -1,4 +1,7 @@
-REGEDIT4
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Digital Extremes\Warframe]
+"@"="LauncherCEFVC14"
 
 [HKEY_CURRENT_USER\Software\Digital Extremes\Warframe\Launcher]
 "APR2007_xinput_x64.cab"="743B333C2DB3D4CF190FB39C29F3C346"
