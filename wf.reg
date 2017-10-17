@@ -38,7 +38,7 @@ Windows Registry Editor Version 5.00
 "OffscreenRenderingMode"="fbo"
 "RenderTargetLockMode"="readtex"
 "StrictDrawOrdering"="disabled"
-"VideoMemorySize"="2048"
+"VideoMemorySize"="3072"
 
 [HKEY_CURRENT_USER\Software\Wine\DllOverrides]
 "d3dcompiler_43"="native,builtin"
