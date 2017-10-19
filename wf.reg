@@ -10,11 +10,11 @@ Windows Registry Editor Version 5.00
 "dsetup32.dll"="0F58CCD58A29827B5D406874360E4C08"
 "DXSETUP.exe"="DDCE338BB173B32024679D61FB4F2BA6"
 "dxupdate.cab"="8ADF5A3C4BD187052BFA92B34220F4E7"
-"Enable64Bit"=dword:00000001
+"Enable64Bit"=dword:00000000
 "EnableAggressiveDownload"=dword:00000001
 "EnableBulkDownload"=dword:00000000
 "EnableDirectX10"=dword:00000001
-"EnableDirectX11"=dword:00000001
+"EnableDirectX11"=dword:00000000
 "EnableFullScreen"=dword:00000000
 "EnableMTRendering"=dword:00000000
 "Jun2010_XAudio_x64.cab"="EDEB828A8E54A9F3851007D80BC8DD6E"
