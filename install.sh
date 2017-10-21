@@ -3,7 +3,7 @@ echo "*************************************************"
 echo "Creating wine prefix and performing winetricks."
 echo "*************************************************"
 
-WINEDEBUG=-all WINEPREFIX=/home/$USER/Warframe winetricks -q vcrun2015 devenum quartz xact xinput directx8 d3dx9_42 d3dx9_43 d3dx10_43 d3dx11_43 win7
+WINEDEBUG=-all WINEPREFIX=/home/$USER/Warframe winetricks -q vcrun2012 vcrun2015 devenum quartz xact xinput directx8 d3dx9_42 d3dx9_43 d3dx10_43 d3dx11_43 win7
 
 echo "*************************************************"
 echo "Creating warframe directories."
