@@ -3,7 +3,7 @@ echo "*************************************************"
 echo "Creating wine prefix and performing winetricks."
 echo "*************************************************"
 
-WINEDEBUG=-all WINEPREFIX=/home/$USER/Warframe winetricks -q vcrun2015 xact xinput win7
+WINEDEBUG=-all WINEARCH=win32 WINEPREFIX=/home/$USER/Warframe winetricks -q vcrun2015 xact xinput win7
 
 echo "*************************************************"
 echo "Creating warframe directories."
@@ -23,7 +23,7 @@ mv EE.cfg /home/$USER/Warframe/drive_c/users/$USER/Local\ Settings/Application\ 
 echo "*************************************************"
 echo "Applying warframe wine prefix registry settings."
 echo "*************************************************"
-WINEDEBUG=-all WINEPREFIX=/home/$USER/Warframe wine regedit /S wf.reg
+WINEDEBUG=-all WINEARCH=win32 WINEPREFIX=/home/$USER/Warframe wine regedit /S wf.reg
 
 
 echo "*************************************************"
@@ -45,7 +45,7 @@ echo "export __GL_SHADER_DISK_CACHE=1" >> warframe.sh
 echo "export __GL_SHADER_DISK_CACHE_PATH=/home/$USER/Warframe/" >> warframe.sh
 
 echo "cd /home/$USER/Warframe/drive_c/Program\ Files/Warframe/" >> warframe.sh
-echo "WINEPREFIX=/home/$USER/Warframe WINEDEBUG=-all wine cmd /C Warframe-Launcher.bat" >> warframe.sh
+echo "WINEARCH=win32 WINEPREFIX=/home/$USER/Warframe WINEDEBUG=-all wine cmd /C Warframe-Launcher.bat" >> warframe.sh
 
 chmod a+x warframe.sh
 sudo cp /home/$USER/Warframe/drive_c/Program\ Files/Warframe/warframe.sh /usr/bin/warframe
