@@ -12,26 +12,33 @@ Option B: Without Lutris:
 
 3. Open the extracted folder in a terminal and:  
 
-    ```  
-    chmod a+x install.sh  
-    ./install.sh  
-    ```  
+```shell
+  chmod a+x install.sh
+```
+
+## Optionally update the install directory in install.sh - if you do so, update uninstall.sh as well
+
+```shell
+  ./install.sh
+```
+
 4. Launch the game via any of the following methods:  
 
-    ```  
-    Applications>Games>Warframe  
-    Warframe desktop shortcut  
-    type "warframe" in a terminal  
-    ```  
+```
+  Applications>Games>Warframe
+  Warframe desktop shortcut
+  type "warframe" in a terminal
+```
+
 5. There will be a black box that comes up - this will update your warframe game. Let it run. When it finishes, the Launcher will run. Press play!  
 
 ## Uninstallation/Removal Instructions
 This applies to non-lutris only: 
 
-    ```  
-    chmod a+x uninstall.sh  
-    ./uninstall.sh  
-    ```  
+```shell
+  chmod a+x uninstall.sh
+  ./uninstall.sh
+```
 
 ## Technical notes:  
 Known issues:
@@ -39,19 +46,20 @@ Local Reflections cause graphical glitches. Motion blurring is broken, Depth of 
 
 These settings are disabled in the launcher to prevent crashing and for better performance:  
 
-    ```  
-    64-bit mode  
-    Launcher GPU Acceleration  
-    Multithreading (this is handled by csmt instead. Game's MT causes artifacting)  
-    ```  
+```
+  64-bit mode
+  Launcher GPU Acceleration
+  Multithreading (this is handled by csmt instead. Game's MT causes artifacting)
+```
+
 These settings are disabled by default to reduce gameplay stuttering and/or graphical glitches:  
 
-    ```  
-    Vsync: OFF  
-    Local Reflections: OFF  
-    Local Reflection Blur: OFF  
-    Motion Blurring: OFF  
-    Depth of Field: OFF  
-    ```  
+```
+  Vsync: OFF
+  Local Reflections: OFF
+  Local Reflection Blur: OFF
+  Motion Blurring: OFF
+  Depth of Field: OFF
+```
 
-You can set all other graphics settings as you wish.  
+You can set all other graphics settings as you wish.

@@ -14,7 +14,7 @@ Windows Registry Editor Version 5.00
 "EnableAggressiveDownload"=dword:00000001
 "EnableBulkDownload"=dword:00000000
 "EnableDirectX10"=dword:00000001
-"EnableDirectX11"=dword:00000001
+"EnableDirectX11"=dword:00000000
 "EnableFullScreen"=dword:00000000
 "EnableMTRendering"=dword:00000000
 "Jun2010_XAudio_x64.cab"="EDEB828A8E54A9F3851007D80BC8DD6E"
@@ -41,6 +41,4 @@ Windows Registry Editor Version 5.00
 "VideoMemorySize"="3072"
 
 [HKEY_CURRENT_USER\Software\Wine\DllOverrides]
-"d3dcompiler_43"="native,builtin"
-"d3dcompiler_47"="native,builtin"
 "rasapi32"="native"
